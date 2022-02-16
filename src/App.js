@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import GlobalStyles from "./GlobalStyles";
+import Ideas from "./Ideas";
 
 class App extends Component {
   constructor() {
@@ -18,7 +19,7 @@ class App extends Component {
       <main className="App">
         <GlobalStyles />
         <h1>IDEABOX</h1>
-        <p>Hello there!</p>
+        <Ideas ideas={this.state.ideas} />
       </main>
     );
   }

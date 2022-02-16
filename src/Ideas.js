@@ -1,7 +1,7 @@
 import React from "react";
 import styledComponents from "styled-components";
 
-const Ideas = () => {
+const Ideas = ({ ideas }) => {
   return (
     <h2>Ideas Go Here!</h2>
   )
