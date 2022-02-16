@@ -4,11 +4,21 @@ import styled from "styled-components";
 import Card from "./Card";
 
 const Ideas = ({ ideas }) => {
+
+  const ideaCards = ideas.map(idea => {
+    return (
+      <Card
+        key={idea.id}
+        id={idea.id}
+        title={idea.title}
+        description={idea.description}
+      />
+    )
+  })
+
   return (
     <IdeasContainer>
-      <Card />
-      <Card />
-      <Card />
+      {ideaCards}
     </IdeasContainer>
   )
 }
