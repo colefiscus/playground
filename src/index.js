@@ -6,5 +6,3 @@ ReactDOM.render(
     <App />,
   document.getElementById('root')
 );
-
-// Use -- import styled from 'styled-components/macro' -- for all styled-components imports
