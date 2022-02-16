@@ -27,7 +27,7 @@ const Ideas = ({ ideas, deleteIdea }) => {
 const IdeasContainer = styled.section`
   padding: 20px;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: 300px 300px 100px;
   grid-gap: 20px;
 `;
 
