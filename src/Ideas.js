@@ -31,7 +31,7 @@ const IdeasContainer = styled.section`
   /* grid-template-columns: 300px 300px 300px; ~~ Pixel-based columns ~~ */
   /* grid-template-columns: 20% 50% 30%; ~~ Percentage-based columns ~~ */
   
-  grid-gap: 20px;
+  gap: 20px 40px;
 `;
 
 export default Ideas;
