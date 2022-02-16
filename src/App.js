@@ -20,6 +20,7 @@ class App extends Component {
       <MainWrapper>
         <GlobalStyles />
         <h1>IDEABOX</h1>
+        {!this.state.ideas.length && <h2>No ideas yet... Add some!</h2>}
         <Ideas ideas={this.state.ideas} />
       </MainWrapper>
     );
