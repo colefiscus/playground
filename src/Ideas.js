@@ -30,7 +30,8 @@ const IdeasContainer = styled.section`
   /* grid-auto-flow: column; ~~ Add column-based flow ~~ */
   /* grid-template-columns: 300px 300px 300px; ~~ Pixel-based columns ~~ */
   /* grid-template-columns: 20% 50% 30%; ~~ Percentage-based columns ~~ */
-  
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 160px);
   gap: 20px 40px;
 `;
 
