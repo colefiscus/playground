@@ -8,10 +8,10 @@ const Ideas = ({ ideas }) => {
   const ideaCards = ideas.map(idea => {
     return (
       <Card
-        key={idea.id}
         id={idea.id}
         title={idea.title}
         description={idea.description}
+        key={idea.id}
       />
     )
   })

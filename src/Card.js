@@ -1,10 +1,12 @@
 import React from "react";
 import styled from "styled-components";
 
-const Card = () => {
+const Card = ({ id, title, description }) => {
   return (
     <CardWrapper>
-      <h3>Card!</h3>
+      <h3>{title}</h3>
+      <p>{description}</p>
+      <button>🗑</button>
     </CardWrapper>
   );
 }
