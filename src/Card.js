@@ -1,12 +1,12 @@
 import React from "react";
 import styled from "styled-components/macro";
 
-const Card = ({ id, title, description }) => {
+const Card = ({ id, title, description, deleteIdea }) => {
   return (
     <CardWrapper>
       <h3>{title}</h3>
       <p>{description}</p>
-      <button>🗑</button>
+      <button onClick={() => deleteIdea(id)}>🗑</button>
     </CardWrapper>
   );
 }

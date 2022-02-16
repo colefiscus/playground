@@ -3,7 +3,7 @@ import styled from "styled-components/macro";
 
 import Card from "./Card";
 
-const Ideas = ({ ideas }) => {
+const Ideas = ({ ideas, deleteIdea }) => {
 
   const ideaCards = ideas.map(idea => {
     return (
@@ -11,6 +11,7 @@ const Ideas = ({ ideas }) => {
         id={idea.id}
         title={idea.title}
         description={idea.description}
+        deleteIdea={deleteIdea}
         key={idea.id}
       />
     )
