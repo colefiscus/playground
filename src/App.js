@@ -16,14 +16,18 @@ class App extends Component {
     }
   }
 
+  addIdea = (newIdea) => {
+    this.setState({ ideas: [...this.state.ideas, newIdea] })
+  }
+
   render() {
     return (
       <MainWrapper>
         <GlobalStyles />
         <h1>IDEABOX</h1>
         {!this.state.ideas.length && <h2>No ideas yet... Add some!</h2>}
+        <Form addIdea={this.addIdea} />
         <Ideas ideas={this.state.ideas} />
-        <Form />
       </MainWrapper>
     );
   }

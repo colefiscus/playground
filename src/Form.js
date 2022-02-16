@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import styled from "styled-components/macro";
 
-class Form extends Component() {
+class Form extends Component {
   constructor() {
     super()
     this.state = {
@@ -10,8 +10,23 @@ class Form extends Component() {
     }
   }
 
+  submitIdea = (event) => {
+    event.preventDefault();
+    const newIdea = {
+      id: Date.now(),
+      idea: this.state.idea,
+      description: this.state.description
+    }
+    this.props.addIdea(newIdea);
+    this.clearInputs();
+  }
+
   handleChange = event => {
     this.setState({ [event.target.name]: event.target.value})
+  }
+
+  clearInputs = () => {
+    this.setState({ idea: "", description: "" })
   }
 
   render() {
@@ -25,7 +40,6 @@ class Form extends Component() {
           onChange={event => this.handleChange(event)}
         />
 
-
         <Input
           type="text"
           placeholder="Description"
@@ -34,7 +48,7 @@ class Form extends Component() {
           onChange={event => this.handleChange(event)}
         />
 
-        <Button>SUBMIT</Button>
+        <Button onSubmit={(event) => this.submitIdea(event)}>SUBMIT</Button>
       </FormWrapper>
     )
   }
