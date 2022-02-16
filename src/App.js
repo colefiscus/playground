@@ -19,6 +19,13 @@ class App extends Component {
   addIdea = (newIdea) => {
     this.setState({ ideas: [...this.state.ideas, newIdea] })
   }
+  
+  deleteIdea = (oldIdea) => {
+    const ideas = this.state.ideas.filter(idea => {
+      return idea.id !== oldIdea.id;
+    })
+    this.setState({ ideas: ideas });
+  }
 
   render() {
     return (
@@ -27,7 +34,7 @@ class App extends Component {
         <h1>IDEABOX</h1>
         {!this.state.ideas.length && <h2>No ideas yet... Add some!</h2>}
         <Form addIdea={this.addIdea} />
-        <Ideas ideas={this.state.ideas} />
+        <Ideas ideas={this.state.ideas} deleteIdea={this.deleteIdea} />
       </MainWrapper>
     );
   }
