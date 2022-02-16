@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import styled from "styled-components";
 import GlobalStyles from "./GlobalStyles";
 import Ideas from "./Ideas";
 
@@ -16,13 +17,18 @@ class App extends Component {
 
   render() {
     return (
-      <main className="App">
+      <MainWrapper>
         <GlobalStyles />
         <h1>IDEABOX</h1>
         <Ideas ideas={this.state.ideas} />
-      </main>
+      </MainWrapper>
     );
   }
 }
+
+const MainWrapper = styled.main`
+  text-align: center;
+  padding: 30px;
+`;
 
 export default App;

@@ -3,10 +3,16 @@ import styled from "styled-components";
 
 const Card = () => {
   return (
-    <div className="card">
+    <CardWrapper>
       <h3>Card!</h3>
-    </div>
+    </CardWrapper>
   );
 }
+
+const CardWrapper = styled.div`
+  border: 3px solid black;
+  padding: 10px;
+  text-align: center;
+`;
 
 export default Card;
