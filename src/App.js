@@ -21,10 +21,8 @@ class App extends Component {
   }
   
   deleteIdea = (oldIdeaID) => {
-    const ideas = this.state.ideas.filter(idea => {
-      return idea.id !== oldIdeaID;
-    })
-    this.setState({ ideas: ideas });
+    const filteredIdeas = this.state.ideas.filter(idea => idea.id !== oldIdeaID);
+    this.setState({ ideas: filteredIdeas });
   }
 
   render() {
