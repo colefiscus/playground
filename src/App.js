@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import styled from "styled-components";
+import styled from "styled-components/macro";
 import GlobalStyles from "./GlobalStyles";
 import Ideas from "./Ideas";
 import Form from "./Form";
