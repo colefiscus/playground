@@ -10,6 +10,10 @@ class Form extends Component() {
     }
   }
 
+  handleChange = event => {
+    this.setState({ [event.target.name]: event.target.value})
+  }
+
   render() {
     return (
       <FormWrapper>
@@ -18,6 +22,7 @@ class Form extends Component() {
           placeholder="Title"
           name="title"
           value={this.state.title}
+          onChange={event => this.handleChange(event)}
         />
 
 
@@ -26,10 +31,11 @@ class Form extends Component() {
           placeholder="Description"
           name="description"
           value={this.state.description}
+          onChange={event => this.handleChange(event)}
         />
 
         <Button>SUBMIT</Button>
-      </form>
+      </FormWrapper>
     )
   }
 }

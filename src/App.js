@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import styled from "styled-components";
 import GlobalStyles from "./GlobalStyles";
 import Ideas from "./Ideas";
+import Form from "./Form";
 
 class App extends Component {
   constructor() {
@@ -22,6 +23,7 @@ class App extends Component {
         <h1>IDEABOX</h1>
         {!this.state.ideas.length && <h2>No ideas yet... Add some!</h2>}
         <Ideas ideas={this.state.ideas} />
+        <Form />
       </MainWrapper>
     );
   }
