@@ -65,8 +65,12 @@ const Input = styled.input`
   font-size: 1rem;
 `;
 
-const Button = styled(Input)`
-  background-color: lightblue;
-`
+const Button = styled.button`
+  margin: 5px;
+  width: 30%;
+  border: 2px solid black;
+  font-size: 1rem;
+  background-color: lightgoldenrodyellow;
+`;
 
 export default Form;
