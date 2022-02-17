@@ -28,9 +28,9 @@ const IdeasContainer = styled.section`
   padding: 20px;
   display: grid;
   /* grid-auto-flow: column; ~~ Add column-based flow ~~ */
-  justify-content: space-evenly;
-  align-items: center;
-  grid-template-columns: repeat(3, 1fr);
+  justify-content: center;
+  align-items: end;
+  grid-template-columns: repeat(3, 200px);
   /* grid-template-columns: 300px 300px 300px; ~~ Pixel-based columns ~~ */
   /* grid-template-columns: 20% 50% 30%; ~~ Percentage-based columns ~~ */
   gap: 20px 40px;
