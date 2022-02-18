@@ -57,6 +57,7 @@ const Header = styled.header`
   width: 100%;
   border: 3px solid green;
   border-radius: 15px;
+  background-color: hsl(320deg, 80%, 80%);
   margin-bottom: 20px;
   display: grid;
   place-content: center;
