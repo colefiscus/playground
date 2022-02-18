@@ -52,8 +52,11 @@ const MainWrapper = styled.main`
 `;
 
 const Header = styled.header`
+  position: sticky;
+  top: 20px;
   width: 100%;
   border: 3px solid green;
+  border-radius: 15px;
   margin-bottom: 20px;
   display: grid;
   place-content: center;
