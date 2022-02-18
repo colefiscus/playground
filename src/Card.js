@@ -15,6 +15,7 @@ const CardWrapper = styled.div`
   border: 3px solid black;
   padding: 10px;
   text-align: center;
+  overflow: auto;
 `;
 
 export default Card;
