@@ -41,6 +41,7 @@ class App extends Component {
         <Form addIdea={this.addIdea} />
         {!this.state.ideas.length && <h2>No ideas yet... Add some!</h2>}
         <Ideas ideas={this.state.ideas} deleteIdea={this.deleteIdea} />
+        <Footer></Footer>
       </MainWrapper>
     );
   }
@@ -61,6 +62,14 @@ const Header = styled.header`
   margin-bottom: 20px;
   display: grid;
   place-content: center;
+`;
+
+const Footer = styled.footer`
+  width: 100%;
+  height: 30px;
+  border: 3px solid green;
+  border-radius: 15px;
+  background-color: hsl(120deg, 80%, 80%); 
 `;
 
 export default App;
