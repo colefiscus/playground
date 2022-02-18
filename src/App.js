@@ -35,7 +35,9 @@ class App extends Component {
     return (
       <MainWrapper>
         <GlobalStyles />
-        <h1>IDEABOX</h1>
+        <Header>
+          <h1>IDEABOX</h1>
+        </Header>
         <Form addIdea={this.addIdea} />
         {!this.state.ideas.length && <h2>No ideas yet... Add some!</h2>}
         <Ideas ideas={this.state.ideas} deleteIdea={this.deleteIdea} />
@@ -47,6 +49,14 @@ class App extends Component {
 const MainWrapper = styled.main`
   text-align: center;
   padding: 30px;
+`;
+
+const Header = styled.header`
+  width: 100%;
+  border: 3px solid green;
+  margin-bottom: 20px;
+  display: grid;
+  place-content: center;
 `;
 
 export default App;
