@@ -49,15 +49,15 @@ class App extends Component {
 
 const MainWrapper = styled.main`
   text-align: center;
-  padding: 30px;
 `;
 
 const Header = styled.header`
   position: sticky;
-  top: 20px;
+  top: 0px;
   width: 100%;
-  border: 3px solid green;
-  border-radius: 15px;
+  border: 3px solid hsl(320deg, 100%, 70%);
+  border-right: none;
+  border-left: none;
   background-color: hsl(320deg, 80%, 80%);
   margin-bottom: 20px;
   display: grid;
@@ -68,7 +68,8 @@ const Footer = styled.footer`
   width: 100%;
   height: 30px;
   border: 3px solid green;
-  border-radius: 15px;
+  border-right: none;
+  border-left: none;
   background-color: hsl(120deg, 80%, 80%); 
 `;
 
