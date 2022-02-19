@@ -51,7 +51,7 @@ class Form extends Component {
           <Label htmlFor="description">Description:</Label>
           <DescriptionInput
             type="text"
-            placeholder="A 30 min course that stretches your kitty."
+            placeholder="A 30 min lesson designed for cats and kittens."
             name="description"
             value={this.state.description}
             onChange={event => this.handleChange(event)}
