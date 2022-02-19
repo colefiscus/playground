@@ -3,28 +3,36 @@ import styled from "styled-components/macro";
 
 const Card = ({ id, title, description, deleteIdea }) => {
   return (
-    <BigCardWrapper>
-      <CardWrapper>
+    <CardWrapper>
+      <Idea>
         <h3>{title}</h3>
         <p>{description}</p>
-        <button onClick={() => deleteIdea(id)}>🗑</button>
-      </CardWrapper>
-    </BigCardWrapper>
+        <TrashButton onClick={() => deleteIdea(id)}>🗑</TrashButton>
+      </Idea>
+    </CardWrapper>
   );
 }
 
-const CardWrapper = styled.div`
+const Idea = styled.div`
   height: 100%;
   background-color: hsl(210deg, 100%, 90%);
   padding: 10px;
   text-align: center;
   overflow: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
 `;
 
-const BigCardWrapper = styled.div`
+const CardWrapper = styled.div`
   overflow: hidden;
   border: 3px solid darkblue;
   border-radius: 10px;
+`;
+
+const TrashButton = styled.button`
+  width: 30px;
 `;
 
 export default Card;
