@@ -62,13 +62,16 @@ const Input = styled.input`
   margin: 5px;
   width: 30%;
   border: 2px solid black;
+  border-radius: 5px;
   font-size: 1rem;
+  padding-left: 8px;
 `;
 
 const Button = styled.button`
   margin: 5px;
   width: 30%;
   border: 2px solid black;
+  border-radius: 5px;
   font-size: 1rem;
   background-color: lightgoldenrodyellow;
 `;

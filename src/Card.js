@@ -13,6 +13,7 @@ const Card = ({ id, title, description, deleteIdea }) => {
 
 const CardWrapper = styled.div`
   border: 3px solid darkblue;
+  border-radius: 5px;
   background-color: hsl(210deg, 100%, 90%);
   padding: 10px;
   text-align: center;
