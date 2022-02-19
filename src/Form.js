@@ -17,8 +17,12 @@ class Form extends Component {
       title: this.state.title,
       description: this.state.description
     }
-    this.props.addIdea(newIdea);
-    this.clearInputs();
+    if (newIdea.title && newIdea.description) {
+      this.props.addIdea(newIdea);
+      this.clearInputs();
+    } else {
+      alert("Please fill in both fields");
+    }
   }
 
   handleChange = event => {
@@ -33,7 +37,7 @@ class Form extends Component {
     return (
       <FormWrapper>
         <InputWrapper>
-          <Label for="title">Title:</Label>
+          <Label htmlFor="title">Title:</Label>
           <TitleInput
             type="text"
             placeholder="Yoga for cats"
@@ -44,7 +48,7 @@ class Form extends Component {
         </InputWrapper>
 
         <InputWrapper>
-          <Label for="description">Description:</Label>
+          <Label htmlFor="description">Description:</Label>
           <DescriptionInput
             type="text"
             placeholder="A 30 min course that stretches your kitty."
