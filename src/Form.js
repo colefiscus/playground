@@ -68,6 +68,13 @@ const TitleInput = styled.input`
   border-radius: 5px;
   font-size: 1rem;
   padding-left: 8px;
+  font-weight: 700;
+  outline-color: deepskyblue;
+
+  &::placeholder {
+    color: hsl(0deg, 0%, 50%);
+    font-weight: 300;
+  }
 `;
 
 const DescriptionInput = styled(TitleInput)`
@@ -81,6 +88,7 @@ const Button = styled.button`
   border-radius: 5px;
   font-size: 1rem;
   background-color: lightgoldenrodyellow;
+  outline-color: deepskyblue;
 `;
 
 export default Form;
