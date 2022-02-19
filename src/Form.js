@@ -32,21 +32,27 @@ class Form extends Component {
   render() {
     return (
       <FormWrapper>
-        <TitleInput
-          type="text"
-          placeholder="Title"
-          name="title"
-          value={this.state.title}
-          onChange={event => this.handleChange(event)}
-        />
+        <InputWrapper>
+          <Label for="title">Title:</Label>
+          <TitleInput
+            type="text"
+            placeholder="Title"
+            name="title"
+            value={this.state.title}
+            onChange={event => this.handleChange(event)}
+          />
+        </InputWrapper>
 
-        <DescriptionInput
-          type="text"
-          placeholder="Description"
-          name="description"
-          value={this.state.description}
-          onChange={event => this.handleChange(event)}
-        />
+        <InputWrapper>
+          <Label for="description">Description:</Label>
+          <DescriptionInput
+            type="text"
+            placeholder="Description"
+            name="description"
+            value={this.state.description}
+            onChange={event => this.handleChange(event)}
+          />
+        </InputWrapper>
 
         <Button onClick={(event) => this.submitIdea(event)}>SUBMIT</Button>
       </FormWrapper>
@@ -61,9 +67,21 @@ const FormWrapper = styled.form`
   padding: 0px 40px;
 `;
 
+const InputWrapper = styled.div`
+  display: flex;
+  width: 38%;
+  gap: 5px;
+`;
+
+const Label = styled.label`
+  width: fit-content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+`;
+
 const TitleInput = styled.input`
-  /* margin: 5px; */
-  width: 20%;
+  width: 100%;
   border: 2px solid black;
   border-radius: 5px;
   font-size: 1rem;
@@ -78,11 +96,10 @@ const TitleInput = styled.input`
 `;
 
 const DescriptionInput = styled(TitleInput)`
-  width: 55%;
+  width: 100%;
 `;
 
 const Button = styled.button`
-  /* margin: 5px; */
   width: 20%;
   border: 2px solid black;
   border-radius: 5px;
