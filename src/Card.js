@@ -24,7 +24,7 @@ const CardWrapper = styled.div`
 const BigCardWrapper = styled.div`
   overflow: hidden;
   border: 3px solid darkblue;
-  border-radius: 15px;
+  border-radius: 10px;
 `;
 
 export default Card;
