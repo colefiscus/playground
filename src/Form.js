@@ -32,7 +32,7 @@ class Form extends Component {
   render() {
     return (
       <FormWrapper>
-        <Input
+        <TitleInput
           type="text"
           placeholder="Title"
           name="title"
@@ -40,7 +40,7 @@ class Form extends Component {
           onChange={event => this.handleChange(event)}
         />
 
-        <Input
+        <DescriptionInput
           type="text"
           placeholder="Description"
           name="description"
@@ -61,13 +61,17 @@ const FormWrapper = styled.form`
   padding: 0px 40px;
 `;
 
-const Input = styled.input`
+const TitleInput = styled.input`
   /* margin: 5px; */
-  width: 35%;
+  width: 20%;
   border: 2px solid black;
   border-radius: 5px;
   font-size: 1rem;
   padding-left: 8px;
+`;
+
+const DescriptionInput = styled(TitleInput)`
+  width: 55%;
 `;
 
 const Button = styled.button`
