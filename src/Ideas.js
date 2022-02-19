@@ -25,7 +25,7 @@ const Ideas = ({ ideas, deleteIdea }) => {
 }
 
 const IdeasContainer = styled.section`
-  padding: 20px;
+  padding: 20px 40px;
   display: grid;
   justify-content: center;
   grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));

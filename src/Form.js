@@ -55,12 +55,15 @@ class Form extends Component {
 }
 
 const FormWrapper = styled.form`
-  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 0px 40px;
 `;
 
 const Input = styled.input`
-  margin: 5px;
-  width: 30%;
+  /* margin: 5px; */
+  width: 35%;
   border: 2px solid black;
   border-radius: 5px;
   font-size: 1rem;
@@ -68,8 +71,8 @@ const Input = styled.input`
 `;
 
 const Button = styled.button`
-  margin: 5px;
-  width: 30%;
+  /* margin: 5px; */
+  width: 20%;
   border: 2px solid black;
   border-radius: 5px;
   font-size: 1rem;
