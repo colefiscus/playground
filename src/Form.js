@@ -93,8 +93,12 @@ const TitleInput = styled.input`
   font-weight: 700;
   outline-color: deepskyblue;
 
+  &:hover::placeholder {
+    color: hsl(0deg, 0%, 40%);
+  }
+
   &::placeholder {
-    color: hsl(0deg, 0%, 50%);
+    color: hsl(0deg, 0%, 60%);
     font-weight: 300;
   }
 `;
