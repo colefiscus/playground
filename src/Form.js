@@ -112,8 +112,12 @@ const Button = styled.button`
   border: 2px solid black;
   border-radius: 5px;
   font-size: 1rem;
-  background-color: lightgoldenrodyellow;
+  background-color: hsl(61,80%,90%);
   outline-color: deepskyblue;
+
+  &:hover {
+    background-color: hsl(61,100%,70%)
+  }
 `;
 
 export default Form;
