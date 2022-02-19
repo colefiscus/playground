@@ -36,7 +36,7 @@ class Form extends Component {
           <Label for="title">Title:</Label>
           <TitleInput
             type="text"
-            placeholder="Title"
+            placeholder="Yoga for cats"
             name="title"
             value={this.state.title}
             onChange={event => this.handleChange(event)}
@@ -47,7 +47,7 @@ class Form extends Component {
           <Label for="description">Description:</Label>
           <DescriptionInput
             type="text"
-            placeholder="Description"
+            placeholder="A 30 min course that stretches your kitty."
             name="description"
             value={this.state.description}
             onChange={event => this.handleChange(event)}
