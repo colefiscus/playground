@@ -36,7 +36,8 @@ const TrashButton = styled.button`
   width: 30px;
 
   &:hover {
-    transform: scale(1.2);
+    transform: scale(1.2) rotate(1turn);
+    transition: transform 300ms;
   }
 `;
 
