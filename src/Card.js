@@ -34,6 +34,10 @@ const CardWrapper = styled.div`
 
 const TrashButton = styled.button`
   width: 30px;
+
+  &:hover {
+    transform: scale(1.2);
+  }
 `;
 
 export default Card;
