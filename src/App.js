@@ -52,6 +52,7 @@ const MainWrapper = styled.main`
 `;
 
 const Header = styled.header`
+  font-family: 'Manrope', sans-serif;
   position: sticky;
   top: 0px;
   width: 100%;

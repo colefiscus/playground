@@ -14,6 +14,7 @@ const Card = ({ id, title, description, deleteIdea }) => {
 }
 
 const Idea = styled.div`
+  font-family: 'Manrope';
   height: 100%;
   background-color: hsl(210deg, 100%, 90%);
   padding: 10px;
