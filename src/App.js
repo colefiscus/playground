@@ -37,7 +37,7 @@ class App extends Component {
       <MainWrapper>
         <GlobalStyles />
         <Header>
-          <h1>IDEABOX</h1>
+          <h1>PLAYGROUND FUNTIME EXTRAVAGANZA</h1>
         </Header>
         <Form addIdea={this.addIdea} />
         {!this.state.ideas.length && <h2>No ideas yet... Add some!</h2>}
