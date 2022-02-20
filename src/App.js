@@ -18,6 +18,7 @@ class App extends Component {
         {id: 7, title: "Go for a walk", description: "Create leash that can control 20 dogs at once. Create leash that can control 20 dogs at once. Create leash that can control 20 dogs at once. Create leash that can control 20 dogs at once. Create leash that can control 20 dogs at once."},
         {id: 8, title: "Sculpt a pot", description: "Invent method that makes a perfect pot every time."},
         {id: 9, title: "Do a workout", description: "Burn 700 calories in 15 minutes of exercise."},
+        {id: 10, title: "Train Penny to not bite Cole", description: "Devise a method to prevent Penny (alternatively known as 'Peeny' during her manic states) from biting Cole. This is of the utmost priority as if this behavior is not changed soon, Cole will leave me and I'll never ever be happy again."}
       ],
     }
   }
