@@ -108,6 +108,7 @@ const DescriptionInput = styled(TitleInput)`
 `;
 
 const Button = styled.button`
+  font-family: 'Manrope', sans-serif;
   width: 20%;
   border: 2px solid black;
   border-radius: 5px;
