@@ -52,6 +52,7 @@ class App extends Component {
 
 const MainWrapper = styled.main`
   text-align: center;
+  isolation: isolate;
 `;
 
 const Header = styled.header`
@@ -66,6 +67,7 @@ const Header = styled.header`
   margin-bottom: 20px;
   display: grid;
   place-content: center;
+  z-index: 1;
 `;
 
 const Footer = styled.footer`
