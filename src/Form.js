@@ -65,6 +65,7 @@ class Form extends Component {
 }
 
 const FormWrapper = styled.form`
+  font-family: 'Manrope', sans-serif;
   display: flex;
   justify-content: space-between;
   width: 100%;
@@ -112,7 +113,6 @@ const DescriptionInput = styled(TitleInput)`
 `;
 
 const Button = styled.button`
-  font-family: 'Manrope', sans-serif;
   width: 20%;
   border: 2px solid black;
   border-radius: 5px;
