@@ -30,16 +30,21 @@ const CardWrapper = styled.div`
   overflow: hidden;
   border: 3px solid darkblue;
   border-radius: 10px;
+  transition: transform 300ms;
+
+  &:hover {
+    transform: translate(5px, -5px);
+  }
 `;
 
 const TrashButton = styled.button`
   width: 30px;
   background-color: white;
   border-radius: 5px;
+  transition: transform 300ms;
 
   &:hover {
     transform: scale(1.2) rotate(1turn);
-    transition: transform 300ms;
   }
 `;
 
