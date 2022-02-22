@@ -34,6 +34,8 @@ const CardWrapper = styled.div`
 
 const TrashButton = styled.button`
   width: 30px;
+  background-color: white;
+  border-radius: 5px;
 
   &:hover {
     transform: scale(1.2) rotate(1turn);
