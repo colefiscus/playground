@@ -93,6 +93,10 @@ const TitleInput = styled.input`
   font-weight: 700;
   outline-color: deepskyblue;
 
+  &:focus::placeholder {
+    color: hsl(0deg, 0%, 40%);
+  }
+
   &:hover::placeholder {
     color: hsl(0deg, 0%, 40%);
   }
