@@ -55,11 +55,6 @@ const CardWrapper = styled.div`
   border: 3px solid darkblue;
   border-radius: 10px;
   transition: transform 300ms;
-
-  /* &:hover {
-    transform: scale(1.1);
-    filter: brightness(110%);
-  } */
 `;
 
 const Idea = styled.div`
@@ -83,6 +78,11 @@ const DeleteButtonWrapper = styled.button`
   border-radius: 12px;
   line-height: 1;
   cursor: pointer;
+  transition: filter 200ms;
+
+  &:hover {
+    filter: brightness(105%);
+  }
 `;
 
 const DeleteButton = styled.span`
