@@ -29,7 +29,7 @@ const IdeasContainer = styled.section`
   display: grid;
   justify-content: center;
   grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-  grid-template-rows: repeat(3, 200px);
+  grid-template-rows: repeat(3, 250px);
   gap: 20px 40px;
 `;
 

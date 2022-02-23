@@ -68,12 +68,14 @@ const Idea = styled.div`
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+  gap: 12px;
 `;
 
 const DeleteButtonWrapper = styled.button`
   font-size: calc(12/16 * 1rem);
   background: hsl(340deg 100% 32%);  
   padding: 0;
+  /* margin-top: 12px; */
   border: none;
   border-radius: 12px;
   line-height: 1;
