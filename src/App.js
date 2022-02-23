@@ -11,7 +11,7 @@ class App extends Component {
       ideas: [
         {id: 1, title: "Plan nighttime routine", description: "Write out series of 5 or more tasks to complete every night to signify it's time for bed."},
         {id: 2, title: "Import Spotify playlists", description: "Go to TIDAL's website to start the import process of Spotify playlists to TIDAL."},
-        {id: 3, title: "Make 30 minute work mode", description: "Figure out way to mmore consistently stand up at desk, take breaks, and increase productivity. Figure out way to mmore consistently stand up at desk, take breaks, and increase productivity. Figure out way to mmore consistently stand up at desk, take breaks, and increase productivity."},
+        {id: 3, title: "Make 30 minute work mode", description: "Figure out way to more consistently stand up at desk, take breaks, and increase productivity. Figure out way to mmore consistently stand up at desk, take breaks, and increase productivity. Figure out way to mmore consistently stand up at desk, take breaks, and increase productivity."},
         {id: 4, title: "Make biscuits", description: "Find a recipe for biscuits and then make them."},
         {id: 5, title: "Paint a picture", description: "Buy some painting things and then use them on a wall."},
         {id: 6, title: "Do yoga", description: "Create a yoga routine for cats, figure out how to train them."},
