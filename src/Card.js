@@ -13,20 +13,8 @@ const Card = ({ id, title, description, deleteIdea }) => {
   );
 }
 
-const Idea = styled.div`
-  font-family: 'Manrope';
-  height: 100%;
-  background-color: hsl(210deg, 100%, 90%);
-  padding: 10px;
-  text-align: center;
-  overflow: auto;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-`;
-
 const CardWrapper = styled.div`
+  position: relative;
   overflow: hidden;
   border: 3px solid darkblue;
   border-radius: 10px;
@@ -36,6 +24,21 @@ const CardWrapper = styled.div`
     transform: scale(1.1);
     filter: brightness(110%);
   }
+`;
+
+const Idea = styled.div`
+  position: relative;
+  font-family: 'Manrope';
+  width: 100%;
+  height: 100%;
+  background-color: hsl(210deg, 100%, 90%);
+  padding: 10px;
+  text-align: center;
+  overflow: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
 `;
 
 const TrashButton = styled.button`
