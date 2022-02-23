@@ -10,18 +10,22 @@ const Card = ({ id, title, description, deleteIdea }) => {
   if (mostRecentAction === "hovering") {
     styles = {
       transform: "translateY(-6px)",
+      transition: "transform 150ms",
     }
   } else if (mostRecentAction === "depressed") {
     styles = {
       transform: "translateY(-2px)",
+      transition: "transform 50ms",
     }
   } else if (mostRecentAction === "released") {
     styles = {
       transform: "translateY(-6px)",
+      transition: "transform 200ms",
     }
   } else {
     styles = {
       transform: "translateY(-4px)",
+      transition: "transform 600ms",
     }
   }
 
