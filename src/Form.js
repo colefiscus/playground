@@ -121,7 +121,7 @@ const Button = styled.button`
   outline-color: deepskyblue;
 
   &:hover {
-    background-color: hsl(61,100%,70%)
+    background-color: hsl(61,100%,70%);
   }
 `;
 

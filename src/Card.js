@@ -33,7 +33,8 @@ const CardWrapper = styled.div`
   transition: transform 300ms;
 
   &:hover {
-    transform: translate(5px, -5px);
+    transform: scale(1.1);
+    filter: brightness(110%);
   }
 `;
 
