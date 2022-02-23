@@ -2,13 +2,42 @@ import React from "react";
 import styled from "styled-components/macro";
 
 const Card = ({ id, title, description, deleteIdea }) => {
+
+  const [mostRecentAction, setMostRecentAction] = React.useState(null);
+
+  let styles = {};
+
+  if (mostRecentAction === "hovering") {
+    styles = {
+      transform: "translateY(-6px)",
+    }
+  } else if (mostRecentAction === "depressed") {
+    styles = {
+      transform: "translateY(-2px)",
+    }
+  } else if (mostRecentAction === "released") {
+    styles = {
+      transform: "translateY(-6px)",
+    }
+  } else {
+    styles = {
+      transform: "translateY(-4px)",
+    }
+  }
+
   return (
     <CardWrapper>
       <Idea>
         <h3>{title}</h3>
         <p>{description}</p>
         <DeleteButtonWrapper onClick={() => deleteIdea(id)}>
-          <DeleteButton>
+          <DeleteButton
+            style={styles}
+            onMouseEnter={() => setMostRecentAction("hovering")}
+            onMouseDown={() => setMostRecentAction("depressed")}
+            onMouseUp={() => setMostRecentAction("released")}
+            onMouseLeave={() => setMostRecentAction("exited")}
+          >
             Delete
           </DeleteButton>
         </DeleteButtonWrapper>
@@ -18,26 +47,23 @@ const Card = ({ id, title, description, deleteIdea }) => {
 }
 
 const CardWrapper = styled.div`
-  position: relative;
   overflow: hidden;
   border: 3px solid darkblue;
   border-radius: 10px;
   transition: transform 300ms;
 
-  &:hover {
+  /* &:hover {
     transform: scale(1.1);
     filter: brightness(110%);
-  }
+  } */
 `;
 
 const Idea = styled.div`
-  position: relative;
   font-family: 'Manrope';
   width: 100%;
   height: 100%;
   background-color: hsl(210deg, 100%, 90%);
   padding: 10px;
-  text-align: center;
   overflow: auto;
   display: flex;
   flex-direction: column;
@@ -53,10 +79,6 @@ const DeleteButtonWrapper = styled.button`
   border-radius: 12px;
   line-height: 1;
   cursor: pointer;
-
-  &:hover {
-    
-  }
 `;
 
 const DeleteButton = styled.span`
@@ -66,11 +88,6 @@ const DeleteButton = styled.span`
   background-color: hsl(345deg, 100%, 47%);
   color: white;
   border-radius: 12px;
-  transform: translateY(-4px);
-
-  &:hover {
-    
-  }
 `;
 
 export default Card;
