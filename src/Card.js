@@ -46,11 +46,13 @@ const Idea = styled.div`
 `;
 
 const DeleteButtonWrapper = styled.button`
-  font-size: calc(14/16 * 1rem);
-  width: fit-content;
-  background-color: white;
-  border-radius: 5px;
-  transition: transform 300ms;
+  font-size: calc(12/16 * 1rem);
+  background: hsl(340deg 100% 32%);  
+  padding: 0;
+  border: none;
+  border-radius: 12px;
+  line-height: 1;
+  cursor: pointer;
 
   &:hover {
     
@@ -58,7 +60,17 @@ const DeleteButtonWrapper = styled.button`
 `;
 
 const DeleteButton = styled.span`
+  display: block;
+  padding: 12px 22px;
+  font-family: 'Manrope', sans-serif;
+  background-color: hsl(345deg, 100%, 47%);
+  color: white;
+  border-radius: 12px;
+  transform: translateY(-4px);
 
+  &:hover {
+    
+  }
 `;
 
 export default Card;
