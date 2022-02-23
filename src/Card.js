@@ -7,7 +7,11 @@ const Card = ({ id, title, description, deleteIdea }) => {
       <Idea>
         <h3>{title}</h3>
         <p>{description}</p>
-        <TrashButton onClick={() => deleteIdea(id)}>🗑</TrashButton>
+        <DeleteButtonWrapper onClick={() => deleteIdea(id)}>
+          <DeleteButton>
+            Delete
+          </DeleteButton>
+        </DeleteButtonWrapper>
       </Idea>
     </CardWrapper>
   );
@@ -41,15 +45,20 @@ const Idea = styled.div`
   align-items: center;
 `;
 
-const TrashButton = styled.button`
-  width: 30px;
+const DeleteButtonWrapper = styled.button`
+  font-size: calc(14/16 * 1rem);
+  width: fit-content;
   background-color: white;
   border-radius: 5px;
   transition: transform 300ms;
 
   &:hover {
-    transform: scale(1.2) rotate(1turn);
+    
   }
+`;
+
+const DeleteButton = styled.span`
+
 `;
 
 export default Card;
