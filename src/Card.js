@@ -78,10 +78,11 @@ const DeleteButtonWrapper = styled.button`
   border-radius: 12px;
   line-height: 1;
   cursor: pointer;
-  transition: filter 200ms;
+  transition: filter 600ms;
 
   &:hover {
     filter: brightness(105%);
+    transition: filter 150ms;
   }
 `;
 
